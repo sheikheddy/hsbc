@@ -28,7 +28,7 @@ for rowOfCellObjects in train['AI2':'AI'+str(train.max_row)]:
         for cellObj in rowOfCellObjects:
             y_train.append(cellObj.value)
     
-keep it simple, stupid
+#keep it simple, stupid
 model = LogisticRegression()
 model.fit(x_train, y_train)
 
